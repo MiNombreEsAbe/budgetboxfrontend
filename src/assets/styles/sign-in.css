@@ -1,0 +1,84 @@
+.loginPage {
+    width: 100%;
+    height: 100vh;
+    background-color: #363636;
+    color: #fff;
+    overflow: hidden;
+}
+
+.loginPageContent {
+    height: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginText p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.loginText .smallText {
+    margin: 10px auto 20px auto;
+}
+
+.loginForm {
+    padding: 5vh 7vw;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px #000;
+    background-color: #2C2C2C;
+}
+
+.loginForm .passwordInputHolder {
+    margin: 10px 0;
+}
+
+.loginForm .emailInputHolder,
+.loginForm .passwordInputHolder {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm .emailInputHolder input,
+.loginForm .passwordInputHolder input {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(255, 255, 255);
+    color: #363636;
+}
+
+.loginForm .emailInputHolder input::placeholder,
+.loginForm .passwordInputHolder input::placeholder {
+    color: #494949;
+}
+
+.loginForm button {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .loginText .largeText {
+        font-size: 2rem;
+        max-width: 350px;
+        line-height: 1.2;
+    }
+    .loginText .smallText {
+        width: 85%;
+        margin: 1rem auto 2.5rem auto;
+        font-size: 1rem;
+    }
+    .sign-in .form-container {
+        max-width: 350px;
+        padding: 20px 50px;
+    }
+}
+@media screen and (max-width: 380px) {
+    
+}

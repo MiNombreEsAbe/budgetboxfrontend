@@ -1,0 +1,178 @@
+
+.landingPage {
+    width: 100%;
+    height: 100vh;
+    background-color: #363636;
+    color: #fff;
+}
+
+.landingPageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem;
+    position: relative;
+    background-color: #363636;
+}
+
+.desktopSample {
+    position: absolute;
+    width: 55%;
+    right: 32px;
+    top: 48px;
+}
+
+.mobileSample {
+    display: none;
+}
+
+.largeText, .smallText {
+    width: 60%;
+    margin: 0;
+}
+
+.largeText {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.smallText {
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.signUpForm .nameInputHolder,
+.signUpForm .emailInputHolder,
+.signUpForm .passwordInputHolder {
+    display: flex;
+    flex-direction: column;
+}
+
+.signUpForm .emailInputHolder {
+    margin: 10px 0;
+}
+
+.signUpForm .nameInputHolder input,
+.signUpForm .emailInputHolder input,
+.signUpForm .passwordInputHolder input {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.signUpForm .passwordInputHolder #passwordInput {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.signUpForm .passwordInputHolder #repasswordInput {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 1px solid #fff;
+}
+
+.signUpForm .nameInputHolder input::placeholder,
+.signUpForm .emailInputHolder input::placeholder,
+.signUpForm .passwordInputHolder input::placeholder {
+    color: rgb(214, 214, 214);
+}
+
+.signUpForm button {
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1496px ) {
+    .largeText {
+        font-size: 40px;
+    }
+    
+    .smallText {
+        font-size: 24px;
+    }
+    
+    .desktopSample {
+        width: 50%;
+        right: 5%;
+        top: 15%;
+    }
+}
+@media only screen and (max-width: 969px) {
+    .largeText {
+        width: 100%;
+    }
+
+    .smallText {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 835px) {
+    .largeText {
+        width: 100%;
+        text-align: center;
+    }
+
+    .smallText {
+        width: 100%;
+        text-align: center;
+    }
+
+    .desktopSample {
+        display: none;
+        width: 100%;
+    }
+
+    .mobileSample {
+        width: 100%;
+        display: block;
+    }
+
+    .signUpForm {
+        margin: 0 auto;
+    }
+   
+}
+
+
+@media only screen and (max-width: 520px) {
+    .largeText {
+        font-size: 28px;
+    }
+    
+    .smallText {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .landingPageContent {
+        padding: 1rem;
+    }
+
+    .signUpForm {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .largeText {
+        font-size: 32px;
+    }
+    
+    .smallText {
+        font-size: 12px;
+        margin-bottom: 12px !important;
+    }
+}
